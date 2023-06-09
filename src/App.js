@@ -1,46 +1,24 @@
-import {
-  Box,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemButton,
-  ListItemIcon,
-  ListItemAvatar,
-  Avatar,
-  Collapse,
-  Tabs,
-  Tab,
-  Drawer,
-  Button,
-  Menu,
-  MenuItem,
-  IconButton
-} from "@mui/material";
-import DraftIcon from "@mui/icons-material/Drafts";
+import { Snackbar, Button, IconButton, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Tooltip  } from "@mui/material";
 import { useState } from "react";
-import ExpandLess from "@mui/icons-material/ExpandLess";
-import ExpandMore from "@mui/icons-material/ExpandMore";
-import { MoreVert } from "@mui/icons-material";
+import CloseIcon from '@mui/icons-material/Close'
 
 function App() {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(true);
   };
   const handleClose = () => {
-    setAnchorEl(null);
+    setOpen(false);
   };
+
+
   return (
     <div style={{ backgroundColor: "#E8ECF4", height: "100vh", padding: 10 }}>
-      <IconButton onClick={handleClick}>
-        <MoreVert />
-      </IconButton>
-      <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
-        <MenuItem onClick={handleClose}>Home</MenuItem>
-        <MenuItem onClick={handleClose}>About</MenuItem>
-        <MenuItem onClick={handleClose}>Services</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
-      </Menu>
+      <Tooltip title="To close the button press it" arrow>
+        <IconButton>
+          <CloseIcon />
+        </IconButton>
+      </Tooltip>
     </div>
   );
 }
