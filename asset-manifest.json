@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mui_tut/static/css/main.e6c13ad2.css",
+    "main.js": "/mui_tut/static/js/main.6f30b212.js",
+    "static/js/787.bdd2a8eb.chunk.js": "/mui_tut/static/js/787.bdd2a8eb.chunk.js",
+    "index.html": "/mui_tut/index.html",
+    "main.e6c13ad2.css.map": "/mui_tut/static/css/main.e6c13ad2.css.map",
+    "main.6f30b212.js.map": "/mui_tut/static/js/main.6f30b212.js.map",
+    "787.bdd2a8eb.chunk.js.map": "/mui_tut/static/js/787.bdd2a8eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6f30b212.js"
+  ]
+}
