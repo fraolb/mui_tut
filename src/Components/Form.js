@@ -63,6 +63,7 @@ const Form = () => {
               onChange={(e) => setEmail(e.target.value)}
               error={!!error.email}
               helperText={error.email}
+              placeholder="Email"
             />
           </Box>
           <Box>
